@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Righteous', cursive;
+    background-image: url("../img/background.png");
+}
+
+/*  header main and footer if exists    */
+.header {
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: lightsalmon;
+    width: 100%;
+    height: 180px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.main {
+    margin-top: 180px;
+}
+
+/*  about tags  */
+h2 {
+    text-transform: uppercase;
+}
+
+button {
+    margin: auto;
+    font-family: 'Righteous', cursive;
+    border: solid black 2px;
+}
+
+a:hover{
+    color:red;
+}
+
+/*  header components   */
+.logo {
+    float: left;
+    display: flex;
+    height: 180px;
+    width: 60%;
+}
+
+#task-logo{
+    width: 30%;
+}
+
+#title-logo{
+    width: 70%;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin: auto;
+    margin-right: 15px;
+}
+
+.user-avatar {
+    height: 120px;
+    border-radius: 50%;
+}
+
+.user-avatar:hover {
+    transform: rotate(3600deg);
+    transition-duration: 3s;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.disconnect-button {
+    background-color: lightseagreen;
+    width: 75%;
+}
+
+/*  main components */
+.task-list {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 300px;
+}
+
+.task {
+    display: flex;
+    background-color: lightsalmon;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px; 
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.task:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    z-index: 10;
+}
+
+.finalized {
+    background-color: gray;
+    padding-left: 25px;
+    opacity: 0.8;
+    text-decoration: line-through;
+}
+
+.tag-group {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.tag {
+    background-color:aquamarine;
+    border: 2px solid whitesmoke;
+    border-radius:10px;
+    margin: 2px 10px 2px 2px;
+    text-transform: uppercase;
+}
+
+.checkbox-button {
+    background-color: lightskyblue;
+    padding: 0 3px 0 3px;
+    height: 20px;
+    overflow: hidden;
+}
+.task-adder {
+    width: 80%;
+    height: 20%;
+    left: 10%;
+    position: relative;
+}
+.form {
+    display: flex;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    background-color: darkkhaki;
+    border: 2px dashed black;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.form > .add-button {
+    background-color: gold;
+    border: 1px solid white;
+    text-align: center;
+    flex-grow: 1;
+    text-transform: uppercase;
+    width: 20%;
+
+}
+
+.form > input[type="text"] {
+    width: 80%;
+    height: 100%;
+    font-size: 30px;
+    border: solid black 2px;
+}
+
+.add-button:hover {
+    transform: scale(1.5);
+    transition-duration: 0.8s;
+}
+
+.task-deleter {
+    width: 50%;
+    height: 20%;
+    left: 25%;
+    position: relative;
+    background-color: darkviolet;
+    color: white;
+    border: 3px solid white;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.task-deleter:hover {
+    transform: scale(1.5);
+    transition-duration: 0.8s;
+}
+

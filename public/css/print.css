@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica';
+}
+
+/*  header main and footer if exists    */
+.header {
+    display: none;
+}
+
+.main {
+    margin-top: 180px;
+}
+
+/*  about tags  */
+h2 {
+    text-transform: none;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+/*  main components */
+.task-list:before {
+    content: "Lista de tareas";
+    font-size: 18px;
+}
+
+.task-list {
+    display:flex;
+    width: 80%;
+    list-style-type: disc;
+    margin-left: 20px;
+    margin: auto;
+    flex-direction: column;
+}
+
+.task {
+    display: list-item;
+    border: none;
+    overflow: visible;
+}
+
+.task > h2 {
+    float: left;
+    margin-right: 20px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.finalized {
+    background-color: gray;
+    padding-left: 25px;
+    opacity: 1;
+}
+
+.finalized > h2 {
+    text-decoration: line-through;
+}
+
+.tag-group {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    float: left;
+}
+
+.tag:before {
+    content: "(";
+}
+
+.tag {
+    margin: 0 10px 0 2px;
+    text-transform: none;
+    font-size: 12px;
+}
+
+.tag:after {
+    content: ")";
+}
+
+.checkbox-button {
+    display: none;
+}
+
+.task-adder {
+    display: none;
+}
+
+.task-deleter {
+    display: none;
+}

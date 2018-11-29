@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Righteous', cursive;
+    background-image: url("../img/background.png");
+}
+
+/*  header main and footer if exists    */
+.header {
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: lightsalmon;
+    width: 100%;
+    height: 180px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.main {
+    margin-top: 180px;
+}
+/*  header components   */
+.logo {
+    float: left;
+    display: flex;
+    height: 180px;
+    width: 60%;
+}
+
+#task-logo{
+    width: 30%;
+}
+
+#title-logo{
+    width: 70%;
+}
+.login-panel {
+    position: absolute;
+    border: 2px solid black;
+    width: 50%;
+    height: 40%;
+    left: 25%;
+    top: 30%;
+    background-color: lightseagreen;
+}
+
+.login-panel > form{
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   justify-content: space-between;
+}
+
+.error-message {
+    position: absolute;
+    left: 30%;
+    top: 70%;
+    width: 50%;
+}
+.error-message > h1 {
+    color: red;
+}
